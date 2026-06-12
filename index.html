@@ -1,8 +1,11 @@
 <!doctype html>
+
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Stella M. Sigala</title>
 
   <style>
@@ -22,17 +25,17 @@
     }
 
     h1 {
+      margin-bottom: 6px;
       font-size: 42px;
       font-weight: 500;
-      margin-bottom: 6px;
     }
 
     h2 {
-      font-size: 26px;
-      font-weight: 500;
       margin-top: 40px;
       padding-top: 20px;
       border-top: 1px solid #ddd;
+      font-size: 26px;
+      font-weight: 500;
     }
 
     a {
@@ -71,30 +74,42 @@
       width: 190px;
       aspect-ratio: 1 / 1;
       object-fit: cover;
-      border: 1px solid #ddd;
       background: #f7f7f7;
+      border: 1px solid #ddd;
     }
 
-    .section {
-      display: grid;
-      grid-template-columns: 180px 1fr;
-      gap: 20px;
-      padding: 18px 0;
+    .project-group {
+      padding: 15px 0;
       border-bottom: 1px solid #ddd;
     }
 
-    .section h3 {
+    .project-group summary {
+      cursor: pointer;
       font-size: 18px;
-      margin: 0;
+      font-weight: 600;
     }
 
-    li + li {
-      margin-top: 8px;
+    .project-group summary:hover {
+      color: #2455a4;
+    }
+
+    .project-content {
+      margin-top: 14px;
+      padding-left: 22px;
+    }
+
+    .project-content ul {
+      margin-top: 0;
+      padding-left: 20px;
+    }
+
+    .project-content li + li {
+      margin-top: 12px;
     }
 
     .note {
-      font-size: 16px;
       margin-top: 6px;
+      font-size: 16px;
     }
 
     footer {
@@ -103,116 +118,206 @@
     }
 
     @media (max-width: 680px) {
+      main {
+        padding: 34px 18px 56px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
       .intro {
         grid-template-columns: 1fr;
       }
 
-      .section {
-        grid-template-columns: 1fr;
+      .portrait {
+        width: 170px;
       }
     }
   </style>
+
 </head>
 
 <body>
   <main>
-    <header>
-      <h1>Stella M. Sigala</h1>
 
-      <p class="subtitle">
-        MSc student in Applied Meteorology and Environmental Physics, University of Patras
-      </p>
+```
+<header>
+  <h1>Stella M. Sigala</h1>
 
-      <p class="email">
-        stellasigalazanet at gmail dot com
-      </p>
+  <p class="subtitle">
+    MSc student in Applied Meteorology and Environmental Physics, University of Patras
+  </p>
 
-      <nav class="links">
-        <a href="stellamsigala_cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-        <a href="https://github.com/stellaMsigala">Code</a>
-        <a href="https://www.linkedin.com/in/stellasigala/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </nav>
-    </header>
+  <p class="email">
+    stellasigalazanet at gmail dot com
+  </p>
 
-    <section class="intro">
-      <img class="portrait" src="profile.jpeg" alt="Portrait of Stella M. Sigala" />
+  <nav class="links">
+    <a
+      href="stellamsigala_cv.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      CV
+    </a>
 
-      <div>
-        <p>
-          Hi! I’m Stella, a physicist working at the intersection of applied meteorology,
-          atmospheric physics, numerical weather prediction, and machine learning for weather and climate.
-        </p>
+    <a
+      href="https://github.com/stellaMsigala"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Code
+    </a>
 
-        <p>
-          I am currently completing an MSc in Applied Meteorology and Environmental Physics
-          at the University of Patras. My work focuses on high-resolution coastal and marine
-          forecasting, limited-area modelling, forecast verification, and the role of observations
-          in physical and AI-based weather prediction systems.
-        </p>
+    <a
+      href="https://www.linkedin.com/in/stellasigala/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      LinkedIn
+    </a>
+  </nav>
+</header>
 
-        <p>
-          I am especially interested in how traditional numerical weather prediction knowledge
-          can support the next generation of machine-learning weather models without losing
-          the physical intuition that atmospheric science is built on.
-        </p>
-      </div>
-    </section>
+<section class="intro">
+  <img
+    class="portrait"
+    src="profile.jpeg"
+    alt="Portrait of Stella M. Sigala"
+  />
 
-    <h2>Projects and notes</h2>
+  <div>
+    <p>
+      Hi! I’m Stella, a physicist working at the intersection of applied
+      meteorology, atmospheric physics, numerical weather prediction, and
+      machine learning for weather and climate.
+    </p>
 
-    <section class="section">
-      <h3>Coastal forecasting</h3>
-      <ul>
-        <li>
-          <a href="#">High-resolution weather forecasting for the 38th America’s Cup in Naples Bay</a>
-          <div class="note">Limited-area modelling, sea-breeze regimes, observations, and forecast uncertainty.</div>
-        </li>
-      </ul>
-    </section>
+    <p>
+      I am currently completing an MSc in Applied Meteorology and
+      Environmental Physics at the University of Patras. My work focuses
+      on high-resolution coastal and marine forecasting, limited-area
+      modelling, forecast verification, and the role of observations in
+      physical and AI-based weather prediction systems.
+    </p>
 
-    <section class="section">
-      <h3>NWP and machine learning</h3>
-      <ul>
-        <li>
-          <a href="#">Notes from ECMWF Numerical Methods for Weather Prediction</a>
-          <div class="note">Dynamical cores, discretization, grids, HPC, and machine-learning contrasts.</div>
-        </li>
+    <p>
+      I am especially interested in how traditional numerical weather
+      prediction knowledge can support the next generation of
+      machine-learning weather models without losing the physical
+      intuition that atmospheric science is built on.
+    </p>
+  </div>
+</section>
 
-        <li>
-          <a href="#">Observation impact in physical and AI weather prediction systems</a>
-          <div class="note">Notes on FSOI, data denial, direct observation prediction, and hybrid forecasting.</div>
-        </li>
-      </ul>
-    </section>
+<h2>Projects and notes</h2>
 
-    <section class="section">
-      <h3>Atmospheric physics</h3>
-      <ul>
-        <li>
-          <a href="#">Blocking, jet waviness, and the January 2017 cold spell</a>
-          <div class="note">ERA5-based diagnostics using blocking indices and cold-spell thresholds.</div>
-        </li>
+<details class="project-group">
+  <summary>Coastal forecasting</summary>
 
-        <li>
-          <a href="#">Radiative transfer experiments with libRadtran</a>
-          <div class="note">Aerosol optical depth, single-scattering albedo, asymmetry factor, and spectral irradiance.</div>
-        </li>
-      </ul>
-    </section>
+  <div class="project-content">
+    <ul>
+      <li>
+        <a href="#">
+          High-resolution weather forecasting for the 38th America’s Cup
+          in Naples Bay
+        </a>
 
-    <section class="section">
-      <h3>Teaching</h3>
-      <ul>
-        <li>
-          <a href="#">Atmospheric Physics laboratory notes</a>
-          <div class="note">Teaching-assistant material on meteorology, atmospheric dynamics, and climate analysis.</div>
-        </li>
-      </ul>
-    </section>
+        <div class="note">
+          Limited-area modelling, sea-breeze regimes, observations, and
+          forecast uncertainty.
+        </div>
+      </li>
+    </ul>
+  </div>
+</details>
 
-    <footer>
-      Last updated June 2026.
-    </footer>
+<details class="project-group">
+  <summary>NWP and machine learning</summary>
+
+  <div class="project-content">
+    <ul>
+      <li>
+        <a href="#">
+          Notes from ECMWF Numerical Methods for Weather Prediction
+        </a>
+
+        <div class="note">
+          Dynamical cores, discretization, grids, HPC, and
+          machine-learning contrasts.
+        </div>
+      </li>
+
+      <li>
+        <a href="#">
+          Observation impact in physical and AI weather prediction systems
+        </a>
+
+        <div class="note">
+          Notes on FSOI, data denial, direct observation prediction, and
+          hybrid forecasting.
+        </div>
+      </li>
+    </ul>
+  </div>
+</details>
+
+<details class="project-group">
+  <summary>Atmospheric physics</summary>
+
+  <div class="project-content">
+    <ul>
+      <li>
+        <a href="#">
+          Blocking, jet waviness, and the January 2017 cold spell
+        </a>
+
+        <div class="note">
+          ERA5-based diagnostics using blocking indices and cold-spell
+          thresholds.
+        </div>
+      </li>
+
+      <li>
+        <a href="#">
+          Radiative transfer experiments with libRadtran
+        </a>
+
+        <div class="note">
+          Aerosol optical depth, single-scattering albedo, asymmetry
+          factor, and spectral irradiance.
+        </div>
+      </li>
+    </ul>
+  </div>
+</details>
+
+<details class="project-group">
+  <summary>Teaching</summary>
+
+  <div class="project-content">
+    <ul>
+      <li>
+        <a href="#">
+          Atmospheric Physics laboratory notes
+        </a>
+
+        <div class="note">
+          Teaching-assistant material on meteorology, atmospheric
+          dynamics, and climate analysis.
+        </div>
+      </li>
+    </ul>
+  </div>
+</details>
+
+<footer>
+  Last updated June 2026.
+</footer>
+```
+
   </main>
 </body>
+
 </html>
