@@ -1,1 +1,1 @@
-# stellaMsigala.github.io
+# stellamsigala.github.io
