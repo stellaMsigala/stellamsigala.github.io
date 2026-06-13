@@ -44,15 +44,10 @@
       color: #b24220;
     }
 
-    /*
-      TOP SECTION:
-      information on the left and photograph on the right
-    */
-
     .top-section {
       display: flex;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       padding: 32px;
     }
 
@@ -85,6 +80,7 @@
     .photo-container {
       display: flex;
       justify-content: center;
+      align-items: center;
       width: 50%;
       padding: 32px;
     }
@@ -92,13 +88,9 @@
     .profile-photo {
       display: block;
       width: 100%;
-      height: auto;
       max-width: 190px;
+      height: auto;
     }
-
-    /*
-      BIOGRAPHY UNDERNEATH THE TOP SECTION
-    */
 
     .biography {
       padding: 0 64px;
@@ -108,10 +100,6 @@
       margin-top: 0;
       margin-bottom: 18px;
     }
-
-    /*
-      PROJECTS
-    */
 
     .projects {
       padding: 10px 64px 0;
@@ -182,7 +170,7 @@
     }
 
     .dropdown-inner li {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     .dropdown-inner li::marker {
@@ -199,18 +187,10 @@
       font-size: 16px;
     }
 
-    /*
-      FOOTER
-    */
-
     footer {
       padding: 32px 64px 48px;
       font-size: 15px;
     }
-
-    /*
-      MOBILE VERSION
-    */
 
     @media (max-width: 700px) {
       body {
@@ -232,12 +212,8 @@
         font-size: 34px;
       }
 
-      .photo-container {
-        justify-content: flex-start;
-      }
-
       .profile-photo {
-        max-width: 100%;
+        max-width: 170px;
       }
 
       .biography,
@@ -295,6 +271,7 @@
     </p>
 
     <nav class="profile-links" aria-label="Profile links">
+
       <a
         href="stellamsigala_cv.pdf"
         target="_blank"
@@ -318,6 +295,7 @@
       >
         LinkedIn
       </a>
+
     </nav>
   </div>
 
@@ -340,9 +318,9 @@
   </p>
 
   <p>
-    I am currently completing an MSc in Applied Meteorology and
-    Environmental Physics at the University of Patras. My work focuses on
-    high-resolution coastal and marine forecasting, limited-area
+    I am currently completing my master’s degree in Applied Meteorology
+    and Environmental Physics at the University of Patras. My work focuses
+    on high-resolution coastal and marine forecasting, limited-area
     modelling, forecast verification, and the role of observations in
     physical and AI-based weather prediction systems.
   </p>
@@ -358,7 +336,7 @@
 
 <section class="projects">
 
-  <h2>Projects and notes</h2>
+  <h2>Projects</h2>
 
   <div class="toggle-container">
 
@@ -407,12 +385,12 @@
         <ul>
           <li>
             <span class="project-name">
-              Notes from ECMWF Numerical Methods for Weather Prediction
+              Numerical methods for weather prediction
             </span>
 
             <div class="project-description">
-              Dynamical cores, discretization, grids, HPC, and
-              machine-learning contrasts.
+              Dynamical cores, discretization, grids, high-performance
+              computing, and machine-learning contrasts.
             </div>
           </li>
 
@@ -423,7 +401,7 @@
             </span>
 
             <div class="project-description">
-              Notes on FSOI, data denial, direct observation prediction,
+              FSOI, data-denial experiments, direct observation prediction,
               and hybrid forecasting.
             </div>
           </li>
@@ -490,12 +468,12 @@
         <ul>
           <li>
             <span class="project-name">
-              Atmospheric Physics laboratory notes
+              Atmospheric Physics laboratory teaching
             </span>
 
             <div class="project-description">
-              Teaching-assistant material on meteorology, atmospheric
-              dynamics, and climate analysis.
+              Teaching-assistant work in meteorology, atmospheric
+              dynamics, boundary-layer physics, and climate analysis.
             </div>
           </li>
         </ul>
